@@ -1,5 +1,5 @@
 import React , { Component } from 'react';
-import './RecipeList.css';
+import './css/RecipeList.css';
 import PropTypes from 'prop-types';
 import Recipe from './Recipe';
 

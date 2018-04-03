@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
-import './Recipe.css';
+import './css/Recipe.css';
 
 class Recipe extends Component {
   static propTypes = {
@@ -19,19 +19,20 @@ class Recipe extends Component {
     ));
     return (
       <div className="recipe-card">
+
         <div className="recipe-card-img">
           <img src={img} alt={title} />
         </div>
+
         <div className="recipe-card-content">
           <h3 className="recipe-title">{title}</h3>
           <h4>Ingredients:</h4>
-          <ul>
-            {ingredients}
-          </ul>
+          <ul>{ingredients}</ul>
           <h4>Instructions:</h4>
           <p>{instructions}</p>
           <button type="button" onClick={() => onDelete(id)}>DELETE</button>
         </div>
+
       </div>
     );
   }
